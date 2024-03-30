@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short News</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html" class="logo-link" title="Home">
+                    <img class ="logo" src="Logo.png" height="50px" width="80px" />
+                </a>
+            </div>
+            
+            <div class="sidebar">
+                <ul class="sidebar-cont">
+                    <li class="menu-title">
+                        <h1>Menu</h1> <div class="cross-menu"><img src=crossed.png></div>
+                    </li>
+                    <li class="category"><a class="list-items category">Category<span>&#11167;</span></a>
+                        <ul>
+                            <li><a href="#" onclick="fetchEntertainmentNews()">Entertainment</a></li>
+                            <li><a href="#" onclick="fetchInternationalNews()">International</a></li>
+                            <li><a href="#" onclick="fetchBusinessNews()">Business</a></li>
+                            <li><a href="#" onclick="fetchIndiaNews()">Indian</a></li>
+                            <li><a href="#" onclick="fetchSportsNews()">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="list-items" href="about.html">About Us</a></li>
+                    <li class="nav-search">
+                        <input type="text" id="searchSidebar" title="Search Text" placeholder="Search">
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="nav-list">
+                <li class="category ok">
+                    <a class="list-items" href="#">Category <span>&#11167;</span></a>
+                    <ul>
+                        <li><a href="#" onclick="fetchEntertainmentNews()">Entertainment</a></li>
+                        <li><a href="#" onclick="fetchInternationalNews()">International</a></li>
+                        <li><a href="#" onclick="fetchBusinessNews()">Business</a></li>
+                        <li><a href="#" onclick="fetchIndiaNews()">Indian</a></li>
+                        <li><a href="#" onclick="fetchSportsNews()">Sports</a></li>
+                    </ul>
+                </li>
+                <li class="ok"><a class="list-items" href="about.html">About Us</a></li>
+                <li class="nav-search">
+                    <input type="text" id="searchNav" title="Search Text" placeholder="Search">
+                </li>
+            </ul>
+       
+            <div class="sidebar-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="card-container"></div>
+    </div>
+    <template class="template-card-container">
+        <div class="card">
+            <a class="news-link" target="_blank">
+                <div class="card-header">
+                    <img src="wp12100078-4k-ultra-hd-breaking-bad-desktop-wallpapers.jpg" onerror="this.src='noimg.webp';">
+                </div>
+                <div class="card-content">
+                    <h3 class="news-title"> title</h3>
+                    <h6 class="news-date">date</h6>
+                    <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="read-section"><a class="read-more" target="_blank">Read More</a></div>
+                </div>
+            </a>
+        </div>
+    </template>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>I'm Eshaan Tripathi, a 2nd year student at Chitkara University, Himachal Pradesh. This website is created by me to test my skills. Hope you will enjoy using it.</p>
+                <div class="contact">
+                    <span><i class="fa fa-phone"></i> XXX-XXX-XXXX</span>
+                    <span><i class="fa fa-envelope"></i> eshaantripathi09@gmail.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://m.facebook.com/profile.php?id=100009812345614"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/e.shaan_/"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <form action="#">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Short News | Designed by Eshaan Tripathi
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
